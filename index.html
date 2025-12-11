@@ -31,18 +31,23 @@
         background: transparent;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.1/",
-    "react": "https://esm.sh/react@^19.2.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.560.0"
-  }
-}
-</script>
-</head>
+    <!-- Import map indispensable pour les modules ES -->
+    <script type="importmap">
+    {
+      "imports": {
+        "react/": "https://esm.sh/react@^19.2.1/",
+        "react": "https://esm.sh/react@^19.2.1",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+        "lucide-react": "https://esm.sh/lucide-react@^0.560.0"
+      }
+    }
+    </script>
+    <!-- Babel Standalone pour compiler le TSX dans le navigateur -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
   <body class="bg-white text-gray-900 antialiased selection:bg-gray-200">
     <div id="root"></div>
+    <!-- Point d'entrée de l'application avec configuration Babel -->
+    <script type="text/babel" data-type="module" data-presets="typescript,react" src="./index.tsx"></script>
   </body>
 </html>

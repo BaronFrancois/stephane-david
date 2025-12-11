@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Phone } from 'lucide-react';
-import { NavLink } from '../types';
+import { NavLink } from '../types.ts';
 
 const navLinks: NavLink[] = [
   { label: 'Accueil', href: '#home' },
