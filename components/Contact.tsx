@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from './ui/Button.tsx';
+import { Button } from './ui/Button';
 import { Mail, Phone, MapPin, Clock } from 'lucide-react';
 
 export const Contact: React.FC = () => {

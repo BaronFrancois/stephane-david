@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar to match Apple aesthetic */
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
